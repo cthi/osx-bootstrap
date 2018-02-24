@@ -1,0 +1,7 @@
+- name: add vimrc
+  copy: src=vimrc dest=~/.vimrc
+
+- name: add vim plugins
+  git: repo={{ item.repo }} dest=~/.vim/bundle/{{ item.name }}
+  with_items:
+    - { repo: "https://github.com/ctrlpvim/ctrlp.vim.git", name: "ctrlp" }

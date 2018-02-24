@@ -1,0 +1,18 @@
+---
+- name: add git alias st 
+  git_config:
+    name: alias.st
+    scope: global
+    value: status
+
+- name: add git alias co 
+  git_config:
+    name: alias.co
+    scope: global
+    value: checkout
+
+- name: add git alias cma
+  git_config:
+    name: alias.cma
+    scope: global
+    value: commit --amend

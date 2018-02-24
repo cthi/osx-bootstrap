@@ -1,0 +1,5 @@
+---
+- name: install ack 
+  homebrew:
+    name: ack
+    state: present

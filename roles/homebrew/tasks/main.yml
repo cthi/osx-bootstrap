@@ -1,0 +1,11 @@
+- name: install homebrew
+  shell: 'yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+
+- name: update homebrew
+  homebrew:
+    update_homebrew: yes
+    upgrade_all: yes
+
+- name: tap caskroom/cask
+  homebrew_tap:
+    tap: "caskroom/cask"

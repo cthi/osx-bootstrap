@@ -1,0 +1,12 @@
+---
+- name: install dev apps
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ cask_dev_apps }}"
+
+- name: install personal apps
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ cask_personal_apps }}"

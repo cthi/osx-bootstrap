@@ -1,0 +1,17 @@
+---
+- name: install zsh
+  homebrew: name=zsh state=latest
+
+- name: install oh-my-zsh
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh.git
+    dest: "~/.oh-my-zsh"
+    update: yes
+
+- name: change shell to zsh
+  shell: "chsh -s $(which zsh) {{ ansible_user }}"
+  become: true
+  become_user: root
+
+- name: add zshrc
+  copy: src=zshrc dest=~/.zshrc

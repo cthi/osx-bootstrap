@@ -1,0 +1,13 @@
+---
+cask_dev_apps:
+  - iterm2
+  - docker
+  - vagrant
+  - virtualbox
+
+cask_personal_apps:
+  - google-chrome
+  - discord
+  - dropbox
+  - transmission
+  - vlc

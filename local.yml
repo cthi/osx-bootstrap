@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  roles:
+    - homebrew
+    - apps
+    - cli
+    - git
+    - vi
+    - zsh
