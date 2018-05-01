@@ -1,0 +1,6 @@
+---
+- name: install tmux
+  homebrew: name=tmux state=latest
+
+- name: add tmuxconf
+  copy: src=tmuxconf dest=~/.tmux.conf
