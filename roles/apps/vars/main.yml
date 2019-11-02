@@ -1,8 +1,6 @@
 ---
 cask_dev_apps:
   - iterm2
-  - docker
-  - vagrant
 
 cask_personal_apps:
   - google-chrome
