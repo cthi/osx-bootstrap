@@ -5,7 +5,5 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 set -o vi
-export GOPATH=/Users/christhi/go
-export GOBIN=/usr/local/bin
 bindkey -v
 bindkey '^R' history-incremental-search-backward
