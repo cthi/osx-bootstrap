@@ -6,6 +6,6 @@
     update_homebrew: yes
     upgrade_all: yes
 
-- name: tap caskroom/cask
+- name: tap koekeishiya/formulae
   homebrew_tap:
-    tap: "caskroom/cask"
+    tap: "koekeishiya/formulae"

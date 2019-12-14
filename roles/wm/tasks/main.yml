@@ -1,0 +1,5 @@
+- name: add skhdrc 
+  copy: src=skhdrc dest=~/.skhdrc
+
+- name: add chunkwmrc 
+  copy: src=chunkwmrc dest=~/.chunkwmrc
